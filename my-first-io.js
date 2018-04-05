@@ -2,4 +2,6 @@ const fs = require('fs');
 
 const text = fs.readFileSync(process.argv[2]).toString();
 
-console.log(text);
+const lines = text.split('\n').length - 1;
+
+console.log(lines);
